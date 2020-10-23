@@ -30,7 +30,7 @@ namespace SmartAnalyticsApp
             }
         }
 
-        public static DataTable GetData(string sqlQuery)
+        public static DataTable GetData(string sqlQuery) //method for returning new tables
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
