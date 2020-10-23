@@ -387,7 +387,7 @@ namespace SmartAnalyticsApp
 
             }
         }
-        public async void ToFiltr()
+        public async void ToFiltr()//to filter data
         {
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
