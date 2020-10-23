@@ -15,6 +15,7 @@ namespace SmartAnalyticsApp
         /// </summary>
         /// 
         ///
+        ///
         [STAThread]
         static void Main()
         {
