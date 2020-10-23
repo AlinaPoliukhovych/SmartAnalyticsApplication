@@ -17,7 +17,7 @@ namespace SmartAnalyticsApp
         static string connectionString = @"Data Source=DESKTOP-VFFBM2L\MSSQLSERVER04;
                                         Initial Catalog=Dairy;Integrated Security=True";
 
-        public static Control MakeChart(string proc, string dataMember, string argument, string range)
+        public static Control MakeChart(string proc, string dataMember, string argument, string range)//make chart 
         {
             ChartControl chart = new ChartControl();
             chart.DataSource = DbConn.GetDataTable(proc);

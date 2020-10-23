@@ -16,7 +16,7 @@ namespace SmartAnalyticsApp
         static string connectionString = @"Data Source=DESKTOP-VFFBM2L\MSSQLSERVER04;
                                         Initial Catalog=Dairy;Integrated Security=True";
 
-        public static DataTable GetDataTable(string storedProcedure)
+        public static DataTable GetDataTable(string storedProcedure) //method for returnig data
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
