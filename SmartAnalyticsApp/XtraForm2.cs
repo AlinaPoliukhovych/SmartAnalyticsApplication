@@ -132,7 +132,7 @@ namespace SmartAnalyticsApp
             DbConn.Delete(textBox1.Text, "TypeProduct");
         }
 
-        private void simpleButton11_Click(object sender, EventArgs e)
+        private void simpleButton11_Click(object sender, EventArgs e)//add new TypeProduct
         {
             Task task = new Task(InsertTypeProduct);
             task.Start();
@@ -142,7 +142,7 @@ namespace SmartAnalyticsApp
             dataGridView2.DataSource = DbConn.GetData($"SELECT * FROM TypeProduct");
         }
 
-        private async void simpleButton3_Click(object sender, EventArgs e)
+        private async void simpleButton3_Click(object sender, EventArgs e)// add pricelist item
         {
             if (label55.Visible)
                 label55.Visible = false;

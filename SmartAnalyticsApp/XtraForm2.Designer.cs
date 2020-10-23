@@ -42,6 +42,13 @@
             this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
             this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.toggleSwitch5 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.toggleSwitch6 = new DevExpress.XtraEditors.ToggleSwitch();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -178,21 +185,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.navigationPage10 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.label38 = new System.Windows.Forms.Label();
-            this.toggleSwitch2 = new DevExpress.XtraEditors.ToggleSwitch();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.navigationPage11 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage12 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -200,17 +192,28 @@
             this.label43 = new System.Windows.Forms.Label();
             this.toggleSwitch3 = new DevExpress.XtraEditors.ToggleSwitch();
             this.toggleSwitch4 = new DevExpress.XtraEditors.ToggleSwitch();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.toggleSwitch5 = new DevExpress.XtraEditors.ToggleSwitch();
-            this.toggleSwitch6 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.navigationPage10 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.toggleSwitch2 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.navigationPage11 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage12 = new DevExpress.XtraBars.Navigation.NavigationPage();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
             this.navigationPage8.SuspendLayout();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).BeginInit();
             this.navigationPage7.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
@@ -242,16 +245,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.navigationPage9.SuspendLayout();
-            this.navigationPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
-            this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch4.Properties)).BeginInit();
-            this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).BeginInit();
+            this.navigationPage10.SuspendLayout();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -348,6 +348,92 @@
             this.navigationPage8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.navigationPage8.Name = "navigationPage8";
             this.navigationPage8.Size = new System.Drawing.Size(1596, 811);
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.Controls.Add(this.label44);
+            this.panel20.Controls.Add(this.label45);
+            this.panel20.Controls.Add(this.label54);
+            this.panel20.Controls.Add(this.label56);
+            this.panel20.Controls.Add(this.toggleSwitch5);
+            this.panel20.Controls.Add(this.toggleSwitch6);
+            this.panel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panel20.Location = new System.Drawing.Point(645, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(270, 114);
+            this.panel20.TabIndex = 9;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(87, 9);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(78, 20);
+            this.label44.TabIndex = 3;
+            this.label44.Text = "Діаграма";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(50, 81);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(177, 20);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "реалізованої продукції";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(3, 28);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(96, 20);
+            this.label54.TabIndex = 6;
+            this.label54.Text = "по вартості";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(162, 28);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(98, 20);
+            this.label56.TabIndex = 4;
+            this.label56.Text = "по кількості";
+            // 
+            // toggleSwitch5
+            // 
+            this.toggleSwitch5.Location = new System.Drawing.Point(164, 50);
+            this.toggleSwitch5.MenuManager = this.ribbonControl;
+            this.toggleSwitch5.Name = "toggleSwitch5";
+            this.toggleSwitch5.Properties.Appearance.BackColor = System.Drawing.Color.Red;
+            this.toggleSwitch5.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toggleSwitch5.Properties.Appearance.Options.UseBackColor = true;
+            this.toggleSwitch5.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitch5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.toggleSwitch5.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.toggleSwitch5.Properties.OffText = "Off";
+            this.toggleSwitch5.Properties.OnText = "On";
+            this.toggleSwitch5.Size = new System.Drawing.Size(95, 28);
+            this.toggleSwitch5.TabIndex = 2;
+            this.toggleSwitch5.Toggled += new System.EventHandler(this.toggleSwitch5_Toggled);
+            // 
+            // toggleSwitch6
+            // 
+            this.toggleSwitch6.EditValue = true;
+            this.toggleSwitch6.Location = new System.Drawing.Point(1, 50);
+            this.toggleSwitch6.MenuManager = this.ribbonControl;
+            this.toggleSwitch6.Name = "toggleSwitch6";
+            this.toggleSwitch6.Properties.Appearance.BackColor = System.Drawing.Color.Green;
+            this.toggleSwitch6.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toggleSwitch6.Properties.Appearance.Options.UseBackColor = true;
+            this.toggleSwitch6.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitch6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.toggleSwitch6.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.toggleSwitch6.Properties.OffText = "Off";
+            this.toggleSwitch6.Properties.OnText = "On";
+            this.toggleSwitch6.Size = new System.Drawing.Size(95, 28);
+            this.toggleSwitch6.TabIndex = 5;
+            this.toggleSwitch6.Toggled += new System.EventHandler(this.toggleSwitch6_Toggled);
             // 
             // panel10
             // 
@@ -2040,154 +2126,6 @@
             this.navigationPage9.Name = "navigationPage9";
             this.navigationPage9.Size = new System.Drawing.Size(1596, 811);
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel17.Location = new System.Drawing.Point(3, 357);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(753, 451);
-            this.panel17.TabIndex = 2;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel16.Location = new System.Drawing.Point(762, 357);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(831, 451);
-            this.panel16.TabIndex = 1;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel12.Location = new System.Drawing.Point(762, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(831, 348);
-            this.panel12.TabIndex = 0;
-            // 
-            // navigationPage10
-            // 
-            this.navigationPage10.Caption = "Діаграма по філіалах";
-            this.navigationPage10.Controls.Add(this.panel18);
-            this.navigationPage10.Controls.Add(this.panel9);
-            this.navigationPage10.Controls.Add(this.panel8);
-            this.navigationPage10.Name = "navigationPage10";
-            this.navigationPage10.Size = new System.Drawing.Size(1596, 811);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(17, 28);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(93, 19);
-            this.label38.TabIndex = 6;
-            this.label38.Text = "по вартості";
-            // 
-            // toggleSwitch2
-            // 
-            this.toggleSwitch2.EditValue = true;
-            this.toggleSwitch2.Location = new System.Drawing.Point(15, 50);
-            this.toggleSwitch2.MenuManager = this.ribbonControl;
-            this.toggleSwitch2.Name = "toggleSwitch2";
-            this.toggleSwitch2.Properties.Appearance.BackColor = System.Drawing.Color.Green;
-            this.toggleSwitch2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.toggleSwitch2.Properties.Appearance.Options.UseBackColor = true;
-            this.toggleSwitch2.Properties.Appearance.Options.UseForeColor = true;
-            this.toggleSwitch2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.toggleSwitch2.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.toggleSwitch2.Properties.OffText = "Off";
-            this.toggleSwitch2.Properties.OnText = "On";
-            this.toggleSwitch2.Size = new System.Drawing.Size(95, 28);
-            this.toggleSwitch2.TabIndex = 5;
-            this.toggleSwitch2.Toggled += new System.EventHandler(this.toggleSwitch2_Toggled);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(162, 28);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(97, 19);
-            this.label37.TabIndex = 4;
-            this.label37.Text = "по кількості";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(87, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 19);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Діаграма";
-            // 
-            // toggleSwitch1
-            // 
-            this.toggleSwitch1.Location = new System.Drawing.Point(164, 50);
-            this.toggleSwitch1.MenuManager = this.ribbonControl;
-            this.toggleSwitch1.Name = "toggleSwitch1";
-            this.toggleSwitch1.Properties.Appearance.BackColor = System.Drawing.Color.Red;
-            this.toggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.toggleSwitch1.Properties.Appearance.Options.UseBackColor = true;
-            this.toggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
-            this.toggleSwitch1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.toggleSwitch1.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.toggleSwitch1.Properties.OffText = "Off";
-            this.toggleSwitch1.Properties.OnText = "On";
-            this.toggleSwitch1.Size = new System.Drawing.Size(95, 28);
-            this.toggleSwitch1.TabIndex = 2;
-            this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel9.Location = new System.Drawing.Point(792, 119);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(801, 689);
-            this.panel9.TabIndex = 1;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel8.Location = new System.Drawing.Point(3, 119);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(783, 692);
-            this.panel8.TabIndex = 0;
-            // 
-            // navigationPage11
-            // 
-            this.navigationPage11.Caption = "navigationPage11";
-            this.navigationPage11.Name = "navigationPage11";
-            this.navigationPage11.Size = new System.Drawing.Size(1596, 811);
-            // 
-            // navigationPage12
-            // 
-            this.navigationPage12.Caption = "navigationPage12";
-            this.navigationPage12.Name = "navigationPage12";
-            this.navigationPage12.Size = new System.Drawing.Size(1596, 811);
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(50, 81);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(175, 19);
-            this.label39.TabIndex = 7;
-            this.label39.Text = "реалізованої продукції";
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.Controls.Add(this.label7);
-            this.panel18.Controls.Add(this.label39);
-            this.panel18.Controls.Add(this.label38);
-            this.panel18.Controls.Add(this.label37);
-            this.panel18.Controls.Add(this.toggleSwitch1);
-            this.panel18.Controls.Add(this.toggleSwitch2);
-            this.panel18.Location = new System.Drawing.Point(636, 3);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(280, 110);
-            this.panel18.TabIndex = 8;
-            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
@@ -2274,91 +2212,153 @@
             this.toggleSwitch4.TabIndex = 5;
             this.toggleSwitch4.Toggled += new System.EventHandler(this.toggleSwitch4_Toggled);
             // 
-            // panel20
+            // panel17
             // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.Controls.Add(this.label44);
-            this.panel20.Controls.Add(this.label45);
-            this.panel20.Controls.Add(this.label54);
-            this.panel20.Controls.Add(this.label56);
-            this.panel20.Controls.Add(this.toggleSwitch5);
-            this.panel20.Controls.Add(this.toggleSwitch6);
-            this.panel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel20.Location = new System.Drawing.Point(645, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(270, 114);
-            this.panel20.TabIndex = 9;
+            this.panel17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel17.Location = new System.Drawing.Point(3, 357);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(753, 451);
+            this.panel17.TabIndex = 2;
             // 
-            // label44
+            // panel16
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(87, 9);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(78, 20);
-            this.label44.TabIndex = 3;
-            this.label44.Text = "Діаграма";
+            this.panel16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel16.Location = new System.Drawing.Point(762, 357);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(831, 451);
+            this.panel16.TabIndex = 1;
             // 
-            // label45
+            // panel12
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(50, 81);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(177, 20);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "реалізованої продукції";
+            this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel12.Location = new System.Drawing.Point(762, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(831, 348);
+            this.panel12.TabIndex = 0;
             // 
-            // label54
+            // navigationPage10
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(3, 28);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(96, 20);
-            this.label54.TabIndex = 6;
-            this.label54.Text = "по вартості";
+            this.navigationPage10.Caption = "Діаграма по філіалах";
+            this.navigationPage10.Controls.Add(this.panel18);
+            this.navigationPage10.Controls.Add(this.panel9);
+            this.navigationPage10.Controls.Add(this.panel8);
+            this.navigationPage10.Name = "navigationPage10";
+            this.navigationPage10.Size = new System.Drawing.Size(1596, 811);
             // 
-            // label56
+            // panel18
             // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(162, 28);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(98, 20);
-            this.label56.TabIndex = 4;
-            this.label56.Text = "по кількості";
+            this.panel18.BackColor = System.Drawing.Color.White;
+            this.panel18.Controls.Add(this.label7);
+            this.panel18.Controls.Add(this.label39);
+            this.panel18.Controls.Add(this.label38);
+            this.panel18.Controls.Add(this.label37);
+            this.panel18.Controls.Add(this.toggleSwitch1);
+            this.panel18.Controls.Add(this.toggleSwitch2);
+            this.panel18.Location = new System.Drawing.Point(636, 3);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(280, 110);
+            this.panel18.TabIndex = 8;
             // 
-            // toggleSwitch5
+            // label7
             // 
-            this.toggleSwitch5.Location = new System.Drawing.Point(164, 50);
-            this.toggleSwitch5.MenuManager = this.ribbonControl;
-            this.toggleSwitch5.Name = "toggleSwitch5";
-            this.toggleSwitch5.Properties.Appearance.BackColor = System.Drawing.Color.Red;
-            this.toggleSwitch5.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.toggleSwitch5.Properties.Appearance.Options.UseBackColor = true;
-            this.toggleSwitch5.Properties.Appearance.Options.UseForeColor = true;
-            this.toggleSwitch5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.toggleSwitch5.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.toggleSwitch5.Properties.OffText = "Off";
-            this.toggleSwitch5.Properties.OnText = "On";
-            this.toggleSwitch5.Size = new System.Drawing.Size(95, 28);
-            this.toggleSwitch5.TabIndex = 2;
-            this.toggleSwitch5.Toggled += new System.EventHandler(this.toggleSwitch5_Toggled);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(87, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 19);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Діаграма";
             // 
-            // toggleSwitch6
+            // label39
             // 
-            this.toggleSwitch6.EditValue = true;
-            this.toggleSwitch6.Location = new System.Drawing.Point(1, 50);
-            this.toggleSwitch6.MenuManager = this.ribbonControl;
-            this.toggleSwitch6.Name = "toggleSwitch6";
-            this.toggleSwitch6.Properties.Appearance.BackColor = System.Drawing.Color.Green;
-            this.toggleSwitch6.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.toggleSwitch6.Properties.Appearance.Options.UseBackColor = true;
-            this.toggleSwitch6.Properties.Appearance.Options.UseForeColor = true;
-            this.toggleSwitch6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.toggleSwitch6.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.toggleSwitch6.Properties.OffText = "Off";
-            this.toggleSwitch6.Properties.OnText = "On";
-            this.toggleSwitch6.Size = new System.Drawing.Size(95, 28);
-            this.toggleSwitch6.TabIndex = 5;
-            this.toggleSwitch6.Toggled += new System.EventHandler(this.toggleSwitch6_Toggled);
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(50, 81);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(175, 19);
+            this.label39.TabIndex = 7;
+            this.label39.Text = "реалізованої продукції";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(17, 28);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(93, 19);
+            this.label38.TabIndex = 6;
+            this.label38.Text = "по вартості";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(162, 28);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(97, 19);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "по кількості";
+            // 
+            // toggleSwitch1
+            // 
+            this.toggleSwitch1.Location = new System.Drawing.Point(164, 50);
+            this.toggleSwitch1.MenuManager = this.ribbonControl;
+            this.toggleSwitch1.Name = "toggleSwitch1";
+            this.toggleSwitch1.Properties.Appearance.BackColor = System.Drawing.Color.Red;
+            this.toggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toggleSwitch1.Properties.Appearance.Options.UseBackColor = true;
+            this.toggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitch1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.toggleSwitch1.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.toggleSwitch1.Properties.OffText = "Off";
+            this.toggleSwitch1.Properties.OnText = "On";
+            this.toggleSwitch1.Size = new System.Drawing.Size(95, 28);
+            this.toggleSwitch1.TabIndex = 2;
+            this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled);
+            // 
+            // toggleSwitch2
+            // 
+            this.toggleSwitch2.EditValue = true;
+            this.toggleSwitch2.Location = new System.Drawing.Point(15, 50);
+            this.toggleSwitch2.MenuManager = this.ribbonControl;
+            this.toggleSwitch2.Name = "toggleSwitch2";
+            this.toggleSwitch2.Properties.Appearance.BackColor = System.Drawing.Color.Green;
+            this.toggleSwitch2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toggleSwitch2.Properties.Appearance.Options.UseBackColor = true;
+            this.toggleSwitch2.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitch2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.toggleSwitch2.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.toggleSwitch2.Properties.OffText = "Off";
+            this.toggleSwitch2.Properties.OnText = "On";
+            this.toggleSwitch2.Size = new System.Drawing.Size(95, 28);
+            this.toggleSwitch2.TabIndex = 5;
+            this.toggleSwitch2.Toggled += new System.EventHandler(this.toggleSwitch2_Toggled);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel9.Location = new System.Drawing.Point(792, 119);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(801, 689);
+            this.panel9.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel8.Location = new System.Drawing.Point(3, 119);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(783, 692);
+            this.panel8.TabIndex = 0;
+            // 
+            // navigationPage11
+            // 
+            this.navigationPage11.Caption = "navigationPage11";
+            this.navigationPage11.Name = "navigationPage11";
+            this.navigationPage11.Size = new System.Drawing.Size(1596, 811);
+            // 
+            // navigationPage12
+            // 
+            this.navigationPage12.Caption = "navigationPage12";
+            this.navigationPage12.Name = "navigationPage12";
+            this.navigationPage12.Size = new System.Drawing.Size(1596, 811);
             // 
             // XtraForm2
             // 
@@ -2378,6 +2378,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).EndInit();
             this.navigationPage8.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).EndInit();
             this.navigationPage7.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -2423,19 +2427,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             this.navigationPage9.ResumeLayout(false);
-            this.navigationPage10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch4.Properties)).EndInit();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).EndInit();
+            this.navigationPage10.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
