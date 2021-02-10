@@ -138,3 +138,6 @@ C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\bin\Debug\ru\DevE
 C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.Registration.resources
 C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.Authorization.resources
 C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.ChangePassw.resources
+C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.AddMaker.resources
+C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.AddAssortment.resources
+C:\Users\Ally\source\repos\SmartAnalyticsApp\SmartAnalyticsApp\obj\Debug\SmartAnalyticsApp.AddProduct.resources

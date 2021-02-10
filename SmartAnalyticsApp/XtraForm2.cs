@@ -51,6 +51,14 @@ namespace SmartAnalyticsApp
             CreateChartMakerProduct__Sum();
             CreateChartTypePackaging__Sum();
             CreateChartDataAffiliate__Sum();
+            navigationPane1.Font = new Font("Arial", 24, GraphicsUnit.Pixel);
+            navigationPage1.Font = new Font("Arial", 24F, GraphicsUnit.Pixel);
+            //navigationPage1.Appearance.FontSizeDelta = 4;
+            //navigationPage2.Appearance.FontSizeDelta = 1;
+            //navigationPage3.Appearance.FontSizeDelta = 12;
+            //navigationPage4.Appearance.FontSizeDelta = -2;
+
+
         }
         public void ShowMaker()
         {
@@ -678,6 +686,47 @@ namespace SmartAnalyticsApp
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (navigationPane1.SelectedPage == navigationPage1)
+            {
+                new AddMaker().Show();
+                ShowMaker();
+            }
+            else if (navigationPane1.SelectedPage == navigationPage2)
+            {
+                new AddProduct().Show();
+                dataGridView2.DataSource = DbConn.GetData($"SELECT * FROM TypeProduct");
+            }
+            else if (navigationPane1.SelectedPage == navigationPage3)
+            {
+                new AddAssortment().Show();
+
+                dataGridView5.DataSource = DbConn.GetDataTable("ShowPrice");
+
+            }
+            else if (navigationPane1.SelectedPage == navigationPage4)
+            {
+
+            }
+            else if (navigationPane1.SelectedPage == navigationPage5)
+            {
+
+            }
+            else if (navigationPane1.SelectedPage == navigationPage6)
+            {
+
+            }
+            else if (navigationPane1.SelectedPage == navigationPage7)
+            {
+
+            }
+            else if (navigationPane1.SelectedPage == navigationPage8)
+            {
+
+            }
         }
     }
 }

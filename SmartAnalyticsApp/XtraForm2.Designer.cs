@@ -35,8 +35,16 @@
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.employeesBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.customersBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.officeNavigationBar = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
             this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -162,8 +170,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
@@ -207,6 +215,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.navigationPage11 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage12 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
@@ -252,6 +261,7 @@
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -262,13 +272,18 @@
             this.ribbonControl.SearchEditItem,
             this.skinRibbonGalleryBarItem,
             this.employeesBarButtonItem,
-            this.customersBarButtonItem});
+            this.customersBarButtonItem,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 46;
+            this.ribbonControl.MaxItemId = 49;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage});
+            this.ribbonPage,
+            this.ribbonPage1,
+            this.ribbonPage2});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.Size = new System.Drawing.Size(1922, 143);
@@ -293,10 +308,39 @@
             this.customersBarButtonItem.Id = 45;
             this.customersBarButtonItem.Name = "customersBarButtonItem";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.ActAsDropDown = true;
+            this.barButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.barButtonItem1.Caption = "Add item";
+            this.barButtonItem1.DropDownControl = this.popupMenu1;
+            this.barButtonItem1.Hint = "set a new value";
+            this.barButtonItem1.Id = 46;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Update item";
+            this.barButtonItem2.Hint = "set new value";
+            this.barButtonItem2.Id = 47;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Delete item";
+            this.barButtonItem3.Hint = "delete item";
+            this.barButtonItem3.Id = 48;
+            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
             // ribbonPage
             // 
             this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup});
+            this.ribbonPageGroup,
+            this.ribbonPageGroup1});
             this.ribbonPage.Name = "ribbonPage";
             this.ribbonPage.Text = "View";
             // 
@@ -307,6 +351,39 @@
             this.ribbonPageGroup.Name = "ribbonPageGroup";
             this.ribbonPageGroup.ShowCaptionButton = false;
             this.ribbonPageGroup.Text = "Appearance";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup1.ImageOptions.SvgImage")));
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Change item";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
             // ribbonStatusBar
             // 
@@ -460,7 +537,7 @@
             this.navigationPage7.Controls.Add(this.dataGridView8);
             this.navigationPage7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.navigationPage7.Name = "navigationPage7";
-            this.navigationPage7.Size = new System.Drawing.Size(1751, 811);
+            this.navigationPage7.Size = new System.Drawing.Size(1596, 811);
             // 
             // panel7
             // 
@@ -647,7 +724,7 @@
             this.dataGridView8.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridView8.Location = new System.Drawing.Point(713, 0);
+            this.dataGridView8.Location = new System.Drawing.Point(558, 0);
             this.dataGridView8.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.RowTemplate.Height = 24;
@@ -675,7 +752,7 @@
             this.navigationPage6.Controls.Add(this.comboBox6);
             this.navigationPage6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.navigationPage6.Name = "navigationPage6";
-            this.navigationPage6.Size = new System.Drawing.Size(1751, 811);
+            this.navigationPage6.Size = new System.Drawing.Size(1596, 811);
             // 
             // textBox8
             // 
@@ -875,13 +952,13 @@
             this.navigationPage5.Controls.Add(this.panelControl1);
             this.navigationPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.navigationPage5.Name = "navigationPage5";
-            this.navigationPage5.Size = new System.Drawing.Size(1751, 811);
+            this.navigationPage5.Size = new System.Drawing.Size(1596, 811);
             // 
             // dataGridView9
             // 
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridView9.Location = new System.Drawing.Point(550, 0);
+            this.dataGridView9.Location = new System.Drawing.Point(395, 0);
             this.dataGridView9.Name = "dataGridView9";
             this.dataGridView9.Size = new System.Drawing.Size(1201, 811);
             this.dataGridView9.TabIndex = 24;
@@ -1729,7 +1806,7 @@
             this.simpleButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
             this.simpleButton10.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton10.Location = new System.Drawing.Point(70, 179);
+            this.simpleButton10.Location = new System.Drawing.Point(70, 186);
             this.simpleButton10.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(176, 51);
@@ -1785,8 +1862,8 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.label23);
             this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.simpleButton11);
             this.panel6.Controls.Add(this.textBox7);
+            this.panel6.Controls.Add(this.simpleButton11);
             this.panel6.Location = new System.Drawing.Point(3, 5);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
@@ -1816,22 +1893,6 @@
             this.label24.TabIndex = 7;
             this.label24.Text = "Name";
             // 
-            // simpleButton11
-            // 
-            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.simpleButton11.Appearance.Options.UseFont = true;
-            this.simpleButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
-            this.simpleButton11.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton11.Location = new System.Drawing.Point(70, 121);
-            this.simpleButton11.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(176, 51);
-            this.simpleButton11.TabIndex = 51;
-            this.simpleButton11.Text = "Додати";
-            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
-            // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1842,6 +1903,22 @@
             this.textBox7.Size = new System.Drawing.Size(176, 31);
             this.textBox7.TabIndex = 9;
             // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton11.Appearance.Options.UseFont = true;
+            this.simpleButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
+            this.simpleButton11.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.simpleButton11.Location = new System.Drawing.Point(39, 116);
+            this.simpleButton11.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(147, 51);
+            this.simpleButton11.TabIndex = 51;
+            this.simpleButton11.Text = "Додати";
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
+            // 
             // navigationPage1
             // 
             this.navigationPage1.Caption = "Виробники";
@@ -1851,7 +1928,7 @@
             this.navigationPage1.Controls.Add(this.dataGridView1);
             this.navigationPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1502, 769);
+            this.navigationPage1.Size = new System.Drawing.Size(1596, 811);
             // 
             // panel3
             // 
@@ -2360,6 +2437,11 @@
             this.navigationPage12.Name = "navigationPage12";
             this.navigationPage12.Size = new System.Drawing.Size(1596, 811);
             // 
+            // popupMenu1
+            // 
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbonControl;
+            // 
             // XtraForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2436,6 +2518,7 @@
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2619,5 +2702,14 @@
         private DevExpress.XtraEditors.ToggleSwitch toggleSwitch4;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label39;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
     }
 }

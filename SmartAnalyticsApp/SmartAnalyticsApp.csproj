@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAssortment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAssortment.Designer.cs">
+      <DependentUpon>AddAssortment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMaker.Designer.cs">
+      <DependentUpon>AddMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangePassw.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +107,15 @@
     <Compile Include="XtraForm2.Designer.cs">
       <DependentUpon>XtraForm2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAssortment.resx">
+      <DependentUpon>AddAssortment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMaker.resx">
+      <DependentUpon>AddMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePassw.resx">
       <DependentUpon>ChangePassw.cs</DependentUpon>
     </EmbeddedResource>

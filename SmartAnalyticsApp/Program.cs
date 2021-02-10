@@ -23,7 +23,7 @@ namespace SmartAnalyticsApp
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new Authorization());
+            Application.Run(new XtraForm2());
         }
     }
 }
